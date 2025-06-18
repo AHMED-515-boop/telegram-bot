@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 BOT_TOKEN = os.environ.get('7750811448:AAHP0G9tkIwNxWyvyO2NH0t5U25Df6_dTrI') or "7750811448:AAHP0G9tkIwNxWyvyO2NH0t5U25Df6_dTrI"
 
 # معرف الأدمن (ضع معرفك هنا)
-ADMIN_ID = os.environ.get('8011237487') or 8011237487  # ضع معرفك هنا
+ADMIN_ID = os.environ.get('1114684570') or 1114684570  # ضع معرفك هنا
 
 # قاموس لحفظ الأسئلة المعلقة
 pending_questions = {}
