@@ -3,6 +3,13 @@ import logging
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
+# لتحميل ملف .env إذا كان موجود
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
 # إعداد السجلات
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -10,8 +17,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# الحصول على التوكن من متغيرات البيئة
-BOT_TOKEN = os.environ.get('7750811448:AAHP0G9tkIwNxWyvyO2NH0t5U25Df6_dTrI')
+# الحصول على التوكن من متغيرات البيئة أو ضعه هنا مباشرة
+BOT_TOKEN = os.environ.get('7750811448:AAHP0G9tkIwNxWyvyO2NH0t5U25Df6_dTrI') or "7750811448:AAHP0G9tkIwNxWyvyO2NH0t5U25Df6_dTrI"
 
 # دالة البداية
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
