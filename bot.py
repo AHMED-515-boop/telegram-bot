@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 
 # إعدادات البوت من متغيرات البيئة
 BOT_TOKEN = os.environ.get('BOT_TOKEN') or "7750811448:AAHP0G9tkIwNxWyvyO2NH0t5U25Df6_dTrI"
-ADMIN_ID = os.environ.get('ADMIN_ID') or "8011237487"
+ADMIN_ID = os.environ.get('ADMIN_ID') or "1114684570"
 
 # التحقق من وجود المتغيرات المطلوبة
 if not BOT_TOKEN:
